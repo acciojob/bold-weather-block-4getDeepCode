@@ -1,1 +1,91 @@
 /*  your css code here. If applicable */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#b96fa1, #5a3f8c);
+  color: white;
+}
+
+.container {
+  padding: 30px;
+}
+
+/* Top Section */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top img {
+  width: 120px;
+}
+
+.city {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* Weather Block */
+.weather-block {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Each Item */
+.item {
+  text-align: center;
+}
+
+.item img {
+  width: 50px;
+  margin: 10px 0;
+}
+
+.item-temp {
+  margin: 5px 0;
+}
+
+.item-temp-number1 {
+  font-weight: 600;
+}
+
+@media (max-width: 899px) {
+  .weather-block {
+    flex-direction: column;
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .item:last-child {
+    border-bottom: none;
+  }
+
+  .item img {
+    width: 40px;
+  }
+}
+
+@media (min-width: 900px) {
+  .weather-block {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
