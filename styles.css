@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -27,7 +26,8 @@ body {
   width: 120px;
 }
 
-.city {
+.selected-location {
+  font-family: 'Roboto';
   font-size: 25px;
   font-weight: 600;
 }
